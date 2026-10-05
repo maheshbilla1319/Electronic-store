@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ElectroX | Customer Dashboard</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="css/customer.css">
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <!-- =================================================
+         SIDEBAR
+    ================================================== -->
+    <aside class="sidebar" id="sidebar">
+
+      <div class="sidebar-top">
+      <a href="#dashboard" class="logo" aria-label="ElectroX Home">
+    <img src="assets/image.webp" alt="ElectroX Logo">
+</a>
+
+
+        <button
+          class="sidebar-close"
+          id="sidebarClose"
+          aria-label="Close sidebar"
+          title="Close sidebar">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+      </div>
+
+
+      <!-- Customer Profile -->
+      <div class="customer-profile">
+
+        <div class="profile-image">
+
+          <img
+            src="assets/image47.webp"
+            alt="Customer profile">
+
+          <span class="online-dot"></span>
+
+        </div>
+
+        <div class="profile-info">
+          <h3>Sarah Johnson</h3>
+          <p>Premium Customer</p>
+        </div>
+
+      </div>
+
+
+      <!-- Sidebar Navigation -->
+      <nav class="sidebar-menu">
+
+        <p class="menu-label">MY ACCOUNT</p>
+
+        <a href="#dashboard" class="menu-link active">
+          <i class="fa-solid fa-grid-2"></i>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="#orders" class="menu-link">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>My Orders</span>
+          <b>3</b>
+        </a>
+
+        <a href="#wishlist" class="menu-link">
+          <i class="fa-regular fa-heart"></i>
+          <span>Wishlist</span>
+          <b>5</b>
+        </a>
+
+        <a href="#products" class="menu-link">
+          <i class="fa-solid fa-box-open"></i>
+          <span>Shop Products</span>
+        </a>
+
+        <a href="#reviews" class="menu-link">
+          <i class="fa-regular fa-star"></i>
+          <span>My Reviews</span>
+        </a>
+
+        <p class="menu-label">ACCOUNT</p>
+
+        <a href="#profile" class="menu-link">
+          <i class="fa-regular fa-user"></i>
+          <span>My Profile</span>
+        </a>
+
+        <a href="#addresses" class="menu-link">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Addresses</span>
+        </a>
+
+        <a href="#payments" class="menu-link">
+          <i class="fa-regular fa-credit-card"></i>
+          <span>Payments</span>
+        </a>
+
+        <a href="#support" class="menu-link">
+          <i class="fa-solid fa-headset"></i>
+          <span>Support</span>
+        </a>
+
+      </nav>
+
+
+      <!-- Sidebar Bottom -->
+      <div class="sidebar-bottom">
+
+        <div class="support-box">
+
+          <div class="support-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+
+          <div>
+            <strong>Need Help?</strong>
+            <span>Our team is available 24/7</span>
+          </div>
+
+        </div>
+
+
+        <button class="logout-btn" id="logoutBtn">
+
+          <i class="fa-solid fa-right-from-bracket"></i>
+
+          <span>Logout</span>
+
+        </button>
+
+      </div>
+
+    </aside>
+
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
+    <main class="main-content">
+
+      <!-- HEADER -->
+      <header class="dashboard-header">
+
+        <div class="header-left">
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open dashboard menu"
+            title="Open dashboard menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+          </button>
+
+          <div>
+            <p class="header-small">
+              Welcome back, Sarah
+            </p>
+
+            <h1>My Dashboard</h1>
+          </div>
+
+        </div>
+
+<div class="header-right">
+
+  <!-- Search -->
+  <button
+    class="header-icon"
+    aria-label="Search"
+    title="Search"
+    onclick="window.location.href='404.html'">
+
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+  </button>
+
+
+  <!-- Notifications -->
+  <button
+    class="header-icon notification-btn"
+    aria-label="Notifications"
+    title="Notifications"
+    onclick="window.location.href='404.html'">
+
+    <i class="fa-regular fa-bell"></i>
+
+    <span></span>
+
+  </button>
+
+
+  <!-- Shopping Cart -->
+  <button
+    class="header-icon cart-btn"
+    aria-label="Shopping cart"
+    title="Shopping cart"
+    onclick="window.location.href='404.html'">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span>2</span>
+
+  </button>
+
+
+  <!-- User -->
+  <div class="header-user">
+
+    <img
+      src="assets/image47.webp"
+      alt="Sarah Johnson">
+
+    <div>
+      <strong>Sarah Johnson</strong>
+      <small>Customer</small>
+    </div>
+
+  </div>
+
+</div>
+
+      </header>
+
+
+      <!-- =================================================
+           DASHBOARD CONTENT
+      ================================================== -->
+      <div class="dashboard-content">
+
+
+        <!-- Welcome Banner -->
+        <section
+          class="welcome-banner"
+          data-aos="fade-up">
+
+          <div class="welcome-content">
+
+            <span class="banner-tag">
+
+              <i class="fa-solid fa-bolt"></i>
+
+              ELECTROX CUSTOMER
+
+            </span>
+
+
+            <h2>
+              Welcome back, Sarah.
+              Your tech journey starts here.
+            </h2>
+
+
+            <p>
+              Discover the latest electronics, track your orders,
+              manage your wishlist and enjoy exclusive member offers.
+            </p>
+
+
+            <a href="404.html" class="banner-btn">
+
+              Explore Products
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+          </div>
+
+
+          <div class="banner-image">
+
+            <img
+              src="assets/image32.webp"
+              alt="Modern electronics">
+
+          </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CUSTOMER STATS
+        ================================================== -->
+        <section class="stats-grid" id="dashboard">
+
+
+          <div
+            class="stat-card"
+            data-aos="fade-up"
+            data-aos-delay="50">
+
+            <div class="stat-top">
+
+              <div class="stat-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+
+              <span class="stat-label">
+                ORDERS
+              </span>
+
+            </div>
+
+            <p>Total Orders</p>
+
+            <h3>24</h3>
+
+            <small>
+              3 currently active
+            </small>
+
+          </div>
+
+
+          <div
+            class="stat-card"
+            data-aos="fade-up"
+            data-aos-delay="100">
+
+            <div class="stat-top">
+
+              <div class="stat-icon">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+              </div>
+
+              <span class="stat-label">
+                SPENT
+              </span>
+
+            </div>
+
+            <p>Total Spending</p>
+
+            <h3>₹1,24,850</h3>
+
+            <small>
+              This year
+            </small>
+
+          </div>
+
+
+          <div
+            class="stat-card"
+            data-aos="fade-up"
+            data-aos-delay="150">
+
+            <div class="stat-top">
+
+              <div class="stat-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <span class="stat-label">
+                SAVED
+              </span>
+
+            </div>
+
+            <p>Wishlist Items</p>
+
+            <h3>12</h3>
+
+            <small>
+              4 items on sale
+            </small>
+
+          </div>
+
+
+          <div
+            class="stat-card"
+            data-aos="fade-up"
+            data-aos-delay="200">
+
+            <div class="stat-top">
+
+              <div class="stat-icon">
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <span class="stat-label">
+                MEMBER
+              </span>
+
+            </div>
+
+            <p>Reward Points</p>
+
+            <h3>2,840</h3>
+
+            <small>
+              Available points
+            </small>
+
+          </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ACTIVE ORDER + MEMBER CARD
+        ================================================== -->
+        <section class="overview-grid">
+
+
+          <!-- Active Order -->
+          <div
+            class="dashboard-card active-order"
+            id="orders"
+            data-aos="fade-right">
+
+            <div class="card-header">
+
+              <div>
+
+                <span>ORDER TRACKING</span>
+
+                <h2>Active Order</h2>
+
+              </div>
+
+              <span class="order-number">
+                #EX-10247
+              </span>
+
+            </div>
+
+
+            <div class="order-product">
+
+              <div class="order-image">
+
+                <img
+                  src="assets/image10.webp"
+                  alt="Wireless headphones">
+
+              </div>
+
+
+              <div class="order-details">
+
+                <span>WIRELESS AUDIO</span>
+
+                <h3>
+                  ElectroX Premium Headphones
+                </h3>
+
+                <p>
+                  Estimated delivery:
+                  <strong>October 4, 2026</strong>
+                </p>
+
+                <strong class="order-price">
+                  ₹34,999
+                </strong>
+
+              </div>
+
+            </div>
+
+
+            <!-- Progress -->
+            <div class="order-progress">
+
+              <div class="progress-line">
+
+                <span class="progress-active"></span>
+
+              </div>
+
+
+              <div class="progress-item completed">
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+
+                <span>Ordered</span>
+
+              </div>
+
+
+              <div class="progress-item completed">
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+
+                <span>Shipped</span>
+
+              </div>
+
+
+              <div class="progress-item active">
+
+                <div>
+                  <i class="fa-solid fa-truck"></i>
+                </div>
+
+                <span>On the way</span>
+
+              </div>
+
+
+              <div class="progress-item">
+
+                <div>
+                  <i class="fa-solid fa-house"></i>
+                </div>
+
+                <span>Delivered</span>
+
+              </div>
+
+            </div>
+
+
+            <button class="track-btn">
+
+              Track Order
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+          </div>
+
+
+          <!-- Premium Card -->
+          <div
+            class="dashboard-card member-card"
+            data-aos="fade-left">
+
+            <span class="member-tag">
+
+              <i class="fa-solid fa-crown"></i>
+
+              ELECTROX MEMBER
+
+            </span>
+
+
+            <h2>
+              Premium
+              Customer
+            </h2>
+
+
+            <p>
+              Enjoy exclusive deals, priority support
+              and faster delivery on selected products.
+            </p>
+
+
+            <div class="member-points">
+
+              <div>
+
+                <span>Reward Points</span>
+
+                <strong>2,840</strong>
+
+              </div>
+
+              <div>
+
+                <span>Next Reward</span>
+
+                <strong>160 pts</strong>
+
+              </div>
+
+            </div>
+
+
+            <div class="member-progress">
+
+              <span style="width: 78%"></span>
+
+            </div>
+
+
+            <small>
+              78% progress to your next reward
+            </small>
+
+
+            <a href="404.html" class="member-btn">
+
+              View Rewards
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+          </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RECENT ORDERS
+        ================================================== -->
+        <section
+          class="dashboard-card orders-card"
+          data-aos="fade-up">
+
+          <div class="card-header">
+
+            <div>
+
+              <span>PURCHASE HISTORY</span>
+
+              <h2>Recent Orders</h2>
+
+            </div>
+
+            <a href="404.html" class="view-all">
+
+              View All
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+          </div>
+
+
+          <div class="table-wrapper">
+
+            <table>
+
+              <thead>
+
+                <tr>
+
+                  <th>ORDER</th>
+                  <th>PRODUCT</th>
+                  <th>DATE</th>
+                  <th>AMOUNT</th>
+                  <th>STATUS</th>
+
+                </tr>
+
+              </thead>
+
+
+              <tbody>
+
+                <tr>
+
+                  <td>
+                    <strong>#EX-10247</strong>
+                  </td>
+
+                  <td>
+
+                    <div class="product-cell">
+
+                      <img
+                        src="assets/image21.webp"
+                        alt="Headphones">
+
+                      <span>
+                        Premium Headphones
+                      </span>
+
+                    </div>
+
+                  </td>
+
+                  <td>
+                    Sep 30, 2026
+                  </td>
+
+                  <td>
+                    <strong>₹34,999</strong>
+                  </td>
+
+                  <td>
+                    <span class="status shipped">
+                      Shipped
+                    </span>
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    <strong>#EX-10218</strong>
+                  </td>
+
+                  <td>
+
+                    <div class="product-cell">
+
+                      <img
+                        src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=200&q=80"
+                        alt="Laptop">
+
+                      <span>
+                        UltraBook Pro
+                      </span>
+
+                    </div>
+
+                  </td>
+
+                  <td>
+                    Sep 20, 2026
+                  </td>
+
+                  <td>
+                    <strong>₹89,999</strong>
+                  </td>
+
+                  <td>
+                    <span class="status delivered">
+                      Delivered
+                    </span>
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    <strong>#EX-10185</strong>
+                  </td>
+
+                  <td>
+
+                    <div class="product-cell">
+
+                      <img
+                        src="assets/image43.webp"
+                        alt="Smartphone">
+
+                      <span>
+                        Galaxy Smartphone
+                      </span>
+
+                    </div>
+
+                  </td>
+
+                  <td>
+                    Sep 12, 2026
+                  </td>
+
+                  <td>
+                    <strong>₹49,999</strong>
+                  </td>
+
+                  <td>
+                    <span class="status delivered">
+                      Delivered
+                    </span>
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RECOMMENDED PRODUCTS
+        ================================================== -->
+        <section
+          class="products-section"
+          id="products">
+
+          <div
+            class="section-heading"
+            data-aos="fade-up">
+
+            <div>
+
+              <span>FOR YOU</span>
+
+              <h2>Recommended Products</h2>
+
+            </div>
+
+            <a href="#" class="view-all">
+
+              Shop All
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+          </div>
+
+
+          <div class="product-grid">
+
+
+            <article
+              class="product-card"
+              data-aos="fade-up">
+
+              <div class="product-image">
+
+                <img
+                  src="assets/image45.webp"
+                  alt="MacBook Pro">
+
+                <button
+                  class="wishlist-btn"
+                  aria-label="Add MacBook to wishlist"
+                  title="Add to wishlist">
+
+                  <i class="fa-regular fa-heart"></i>
+
+                </button>
+
+                <span>POPULAR</span>
+
+              </div>
+
+
+              <div class="product-content">
+
+                <small>LAPTOP</small>
+
+                <h3>
+                  MacBook Pro 16"
+                </h3>
+
+
+                <div class="rating">
+
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+
+                  <span>
+                    4.9
+                  </span>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                  <strong>
+                    ₹1,89,999
+                  </strong>
+
+                  <button
+                    class="cart-small"
+                    aria-label="Add MacBook to cart"
+                    title="Add to cart">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                  </button>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <article
+              class="product-card"
+              data-aos="fade-up"
+              data-aos-delay="100">
+
+              <div class="product-image">
+
+                <img
+                  src="assets/image37.webp"
+                  alt="Smartphone">
+
+                <button
+                  class="wishlist-btn"
+                  aria-label="Add smartphone to wishlist"
+                  title="Add to wishlist">
+
+                  <i class="fa-regular fa-heart"></i>
+
+                </button>
+
+                <span>NEW</span>
+
+              </div>
+
+
+              <div class="product-content">
+
+                <small>SMARTPHONE</small>
+
+                <h3>
+                  Galaxy S26 Ultra
+                </h3>
+
+
+                <div class="rating">
+
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+
+                  <span>
+                    4.8
+                  </span>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                  <strong>
+                    ₹1,29,999
+                  </strong>
+
+                  <button
+                    class="cart-small"
+                    aria-label="Add smartphone to cart"
+                    title="Add to cart">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                  </button>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <article
+              class="product-card"
+              data-aos="fade-up"
+              data-aos-delay="200">
+
+              <div class="product-image">
+
+                <img
+                  src="assets/image10.webp"
+                  alt="Wireless headphones">
+
+                <button
+                  class="wishlist-btn"
+                  aria-label="Add headphones to wishlist"
+                  title="Add to wishlist">
+
+                  <i class="fa-regular fa-heart"></i>
+
+                </button>
+
+                <span>SALE</span>
+
+              </div>
+
+
+              <div class="product-content">
+
+                <small>AUDIO</small>
+
+                <h3>
+                  Premium Headphones
+                </h3>
+
+
+                <div class="rating">
+
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+
+                  <span>
+                    4.9
+                  </span>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                  <strong>
+                    ₹34,999
+                  </strong>
+
+                  <button
+                    class="cart-small"
+                    aria-label="Add headphones to cart"
+                    title="Add to cart">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                  </button>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <article
+              class="product-card"
+              data-aos="fade-up"
+              data-aos-delay="300">
+
+              <div class="product-image">
+
+                <img
+                  src="assets/image40.webp"
+                  alt="Smartwatch">
+
+                <button
+                  class="wishlist-btn"
+                  aria-label="Add smartwatch to wishlist"
+                  title="Add to wishlist">
+
+                  <i class="fa-regular fa-heart"></i>
+
+                </button>
+
+                <span>TRENDING</span>
+
+              </div>
+
+
+              <div class="product-content">
+
+                <small>WEARABLE</small>
+
+                <h3>
+                  Smart Watch X
+                </h3>
+
+
+                <div class="rating">
+
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+
+                  <span>
+                    4.7
+                  </span>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                  <strong>
+                    ₹18,999
+                  </strong>
+
+                  <button
+                    class="cart-small"
+                    aria-label="Add smartwatch to cart"
+                    title="Add to cart">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                  </button>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+        <!-- =================================================
+             WISHLIST
+        ================================================== -->
+        <section
+          class="dashboard-card wishlist-section"
+          id="wishlist"
+          data-aos="fade-up">
+
+          <div class="card-header">
+
+            <div>
+
+              <span>YOUR SAVED ITEMS</span>
+
+              <h2>Wishlist</h2>
+
+            </div>
+
+            <a href="404.html" class="view-all">
+              View Wishlist
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+
+          <div class="wishlist-grid">
+
+            <div class="wishlist-item">
+
+              <div class="wishlist-image">
+
+                <img
+                  src="assets/image21.webp"
+                  alt="Laptop">
+
+              </div>
+
+              <div>
+
+                <small>LAPTOP</small>
+
+                <h3>
+                  UltraBook Air
+                </h3>
+
+                <strong>
+                  ₹74,999
+                </strong>
+
+              </div>
+
+              <button
+                aria-label="Remove from wishlist"
+                title="Remove from wishlist"
+                class="remove-wishlist">
+
+                <i class="fa-solid fa-xmark"></i>
+
+              </button>
+
+            </div>
+
+
+            <div class="wishlist-item">
+
+              <div class="wishlist-image">
+
+                <img
+                  src="assets/image37.webp"
+                  alt="Phone">
+
+              </div>
+
+              <div>
+
+                <small>ACCESSORY</small>
+
+                <h3>
+                  MagSafe Charger
+                </h3>
+
+                <strong>
+                  ₹4,999
+                </strong>
+
+              </div>
+
+              <button
+                aria-label="Remove from wishlist"
+                title="Remove from wishlist"
+                class="remove-wishlist">
+
+                <i class="fa-solid fa-xmark"></i>
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SUPPORT
+        ================================================== -->
+        <section
+          class="support-section"
+          id="support"
+          data-aos="fade-up">
+
+          <div class="support-image">
+
+            <img
+              src="assets/image47.webp"
+              alt="Customer support">
+
+          </div>
+
+
+          <div class="support-content">
+
+            <span>NEED ASSISTANCE?</span>
+
+            <h2>
+              We're here whenever
+              you need us.
+            </h2>
+
+            <p>
+              Have questions about an order, product or delivery?
+              Our customer support team is ready to help.
+            </p>
+
+
+            <div class="support-actions">
+
+              <a href="404.html" class="support-btn">
+
+                Contact Support
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+              </a>
+
+              <a href="tel:+919876543210" class="phone-btn">
+
+                <i class="fa-solid fa-phone"></i>
+
+                +91 98765 43210
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+        <footer class="dashboard-footer">
+
+          <p>
+            © 2026 Stackly. All rights reserved.
+          </p>
+
+          <div>
+
+            <a href="404.html">
+              Privacy
+            </a>
+
+            <a href="404.html">
+              Terms
+            </a>
+
+            <a href="404.html">
+              Support
+            </a>
+
+          </div>
+
+        </footer>
+
+      </div>
+
+    </main>
+
+  </div>
+
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="js/customer.js"></script>
+
+</body>
+</html>
